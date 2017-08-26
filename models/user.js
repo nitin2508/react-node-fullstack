@@ -17,7 +17,12 @@ const userSchema = new Schema({
     },
     image: {
         type: String
+    },
+    credits:{
+        type:Number,
+        default:0
     }
+
 });
 
 //to create new collection

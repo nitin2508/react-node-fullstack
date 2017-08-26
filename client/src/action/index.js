@@ -13,3 +13,9 @@ import { FETCH_USER } from './types.js';
        const res = await axios.get('/api/current_user')
            dispatch({type:FETCH_USER,payload:res.data});
    }
+
+   export const handleToken = (token)=> async dispatch=>{
+        console.log('CALLEDDDDD')
+        const res = await axios.post('/api/stripe',token);
+        dispatch({type:FETCH_USER,payload:res.data});
+   }
