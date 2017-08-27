@@ -29,9 +29,9 @@ app.use(passport.session());
 require("./routes/authRoutes")(app);
 require('./routes/billingRoutes')(app);
 
-app.get("/", (req, res) => {
-  res.send({ hi: "Buddy" });
-});
+// app.get("/", (req, res) => {
+//   res.send({ hi: "Buddy" });
+// });
 
 if(process.env.NODE_ENV ==='production'){
 
