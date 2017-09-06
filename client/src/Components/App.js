@@ -4,10 +4,10 @@ import Header from './Header';
 import {connect} from 'react-redux';
 import * as actions from '../action'
 import Landing from './Landing'
+import Dashboard from './Dashboard';
+import SurveyNew from './surveys/SurveyNew';
 
-
-const Dashboard = ()=><Link to={true?"/surveys":"/dashboard"} className="brand-logo">Emaily</Link>;
-const SurveyNew = ()=><h2>SurveyNew</h2>;
+// const SurveyNew = ()=><h2>SurveyNew</h2>;
 //const Landing = ()=><h2>Landing</h2>;
 
 class App extends Component{

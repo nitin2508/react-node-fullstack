@@ -16,7 +16,19 @@ import { FETCH_USER } from './types.js';
    }
 
    export const handleToken = (token)=> async dispatch=>{
-        console.log('CALLEDDDDD')
         const res = await axios.post('/api/stripe',token);
         dispatch({type:FETCH_USER,payload:res.data});
    }
+
+   export const submitSurvey = (values,history)=>async dispatch=>{
+    console.log(values)
+          const res = await axios.post('/api/surveys',values);
+          history.push('/surveys');
+         dispatch({type:FETCH_USER,payload:res.data});  
+   }
+
+//    export const submitSurvey = (values)=> {
+//        console.log(values)
+//      const res = await axios.post('/api/surveys',values);
+//      dispatch({type:FETCH_USER,payload:res.data});  
+//    }
