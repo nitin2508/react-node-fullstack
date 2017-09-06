@@ -7,5 +7,7 @@ module.exports = {
   stripeSecretKey:'sk_test_Htde6M2EfB77u3vx73kduIBG',
   sendGridKey:'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',
   redirectDomain:'http://localhost:3000'
+  
+
 
 };
